@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
+@import url('normalize.css');
+
+body {
+	background: #f9fafc;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header {
+	background: rgba(44, 50, 57, 1) url(../img/exagon-pattern.png);
+	width: 100%;
+    height: 55px;
+    position: relative;
+    padding: 14px 0;
+    border-bottom: 1px solid #e0e7ea;
+    margin-bottom: 50px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+
+}
+
+.header__logo {
+	background: url(../img/logo.png) no-repeat;
+	width: 130px;
+	height: 50px;
+	background-size: auto 100%; 
+	animation: bounceIn 0.6s;
+  	transform: rotate(0deg) scale(1) translateZ(0);
+  	transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+  	float: left;
+}
+
+
+@media (min-width: 768px) {
+
+	.header__navbar {
+		animation: bounceIn 0.6s;
+	  	transform: rotate(0deg) scale(1) translateZ(0);
+	  	transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+	}
+
+	.header__navbar.header__navbar--left {
+		float: left !important;
+	}
+
+	.header__navbar.header__navbar--right {
+		float: right !important;
+	}
+
+
+	.header__navbar ul > li {
+		float: left;
+	}
+
+	.header__navbar ul > li a {
+		padding: 24px 23px;
+		color: #fff;
+		font-size: 16px;
+		letter-spacing: 0.73px;
+		transition: all 300ms ease-in-out;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	.header__navbar ul > li a.header__navbar--main, 
+	.header__navbar ul > li a:hover {
+		color: #f9a91e;
+	}
+
+	.header__navbar ul > li a.header__navbar--submain {
+		color: #51bfed;
+	}
+
+}
+
+
+.header__navbar ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+.page__container {
+	max-width: 1350px;
+	padding: 0 20px;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+
+@keyframes bounceIn {
+  0% {
+    opacity: 1;
+    transform: scale(.3);
+  } 
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  } 
+
+  70% {
+    opacity: 1;
+    transform: scale(.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.page__mainwrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+.page__wrap {
+	height: 1500px;
+}
+
+
+
+.say-hallo .bg-area.left-bg {
+    border-width: 590px 0 0 2500px;
+    border-color: transparent transparent transparent rgba(	249, 169, 30, 0.2);
+    right: 30%;
+}
+
+.say-hallo .bg-area {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    line-height: 0px;
+    bottom: 0;
+    z-index: -10;
+}
+
+.say-hallo .bg-area.right-bg {
+    border-width: 0 0 570px 1500px;
+    border-color: transparent transparent rgba(81, 191, 237, 0.2) transparent;
+    right: 0;
+}
