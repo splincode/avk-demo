@@ -1,0 +1,73 @@
+
+.header {
+	background: rgba(44, 50, 57, 1) url(../../img/exagon-pattern.png);
+    width: 100%;
+    height: 655px;
+    position: relative;
+    padding: 45px 0;
+    border-bottom: 1px solid #e0e7ea;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+}
+
+
+.header__logo {
+	background: url(../../img/logo.png) no-repeat;
+	width: 130px;
+	height: 50px;
+	background-size: auto 100%; 
+	animation: bounceIn 0.6s;
+  	transform: rotate(0deg) scale(1) translateZ(0);
+  	transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+  	float: left;
+}
+
+
+@media (min-width: 768px) {
+
+	.header__navbar {
+		animation: bounceIn 0.6s;
+	  	transform: rotate(0deg) scale(1) translateZ(0);
+	  	transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+	}
+
+	.header__navbar.header__navbar--left {
+		float: left !important;
+	}
+
+	.header__navbar.header__navbar--right {
+		float: right !important;
+	}
+
+
+	.header__navbar ul > li {
+		float: left;
+	}
+
+	.header__navbar ul > li a {
+		padding: 24px 23px;
+		color: #fff;
+		font-size: 16px;
+		letter-spacing: 0.73px;
+		transition: all 300ms ease-in-out;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	.header__navbar ul > li a.header__navbar--main, 
+	.header__navbar ul > li a:hover {
+		color: #f9a91e;
+	}
+
+	.header__navbar ul > li a.header__navbar--submain {
+		color: #51bfed;
+	}
+
+}
+
+
+.header__navbar ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}

@@ -1,83 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
 @import url('normalize.css');
+@import url('layout/header.css');
+@import url('layout/footer.css');
+
 
 body {
-	background: #f9fafc;
+	background: #fff;
 	font-family: 'Roboto', sans-serif;
 }
 
-.header {
-	background: rgba(44, 50, 57, 1) url(../img/exagon-pattern.png);
-	width: 100%;
-    height: 55px;
-    position: relative;
-    padding: 14px 0;
-    border-bottom: 1px solid #e0e7ea;
-    margin-bottom: 50px;
-	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
 
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
 }
 
-.header__logo {
-	background: url(../img/logo.png) no-repeat;
-	width: 130px;
-	height: 50px;
-	background-size: auto 100%; 
-	animation: bounceIn 0.6s;
-  	transform: rotate(0deg) scale(1) translateZ(0);
-  	transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
-  	float: left;
+*::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
 }
 
-
-@media (min-width: 768px) {
-
-	.header__navbar {
-		animation: bounceIn 0.6s;
-	  	transform: rotate(0deg) scale(1) translateZ(0);
-	  	transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
-	}
-
-	.header__navbar.header__navbar--left {
-		float: left !important;
-	}
-
-	.header__navbar.header__navbar--right {
-		float: right !important;
-	}
-
-
-	.header__navbar ul > li {
-		float: left;
-	}
-
-	.header__navbar ul > li a {
-		padding: 24px 23px;
-		color: #fff;
-		font-size: 16px;
-		letter-spacing: 0.73px;
-		transition: all 300ms ease-in-out;
-		text-transform: uppercase;
-		text-decoration: none;
-	}
-
-	.header__navbar ul > li a.header__navbar--main, 
-	.header__navbar ul > li a:hover {
-		color: #f9a91e;
-	}
-
-	.header__navbar ul > li a.header__navbar--submain {
-		color: #51bfed;
-	}
-
+*::-webkit-scrollbar-thumb
+{
+	background-color: #0ae;
+	
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
 }
 
-
-.header__navbar ul {
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-}
 
 
 .page__container {
@@ -87,6 +40,106 @@ body {
 	margin: 0 auto;
 }
 
+
+.wrap__logo {
+	background: url(https://c.s-microsoft.com/en-us/CMSImages/IOT_WindowsIoT_Illustration_1600X300.jpg?version=35db3743-09c5-6c32-3fe6-85559d3e5b33) no-repeat -40px 10px;
+	background-size: 100%;
+	height: 100px;
+	width: 400px;
+
+}
+
+.container__wrap {
+	float: left;
+	height: 100px;
+	padding: 10px;
+}
+
+.container__logotype {
+	float: left;
+	height: 35px;
+	font-size: 16px;
+	min-width: 100px;
+	padding: 5px;
+	position: relative;
+	margin: 0 5px;
+	overflow: hidden;
+	line-height: 2.1;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	opacity: 0.7;
+	transition: all 0.3s;
+	animation: bounceIn 0.6s;
+  	transform: rotate(0deg) scale(1) translateZ(0);
+  	transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+}
+
+.container-outwrap {
+	padding-top: 155px;
+}
+
+
+.container__logotype:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	opacity: 1;
+}
+
+.container__logotype img {
+	max-width: 100px;
+	vertical-align: middle;
+	position: absolute;
+	min-width: 100px;
+	top: 50%;
+	margin-top: -15px;
+}
+
+.container__wrap--left {
+	width: 65%;
+	margin-right: calc(5% - 20px);
+}
+
+.wrap-white {
+	color: #fff;
+}
+
+.write-h2 {
+	letter-spacing: -0.01em;
+    line-height: 1;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 87px;
+
+}
+
+.write-p {
+	font-size: 30px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.wrap-logo {
+	margin-top: 40px;
+	width: 100%;
+}
+
+.container__wrap--right {
+	width: 25%;
+	
+}
+
+.container__wrap__block {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 2px;
+	border-radius: 15px;
+}
+
+.container__wrap__block--s1 {
+	background: url(../img/s1.png) no-repeat center center;
+	background-size: cover;
+}
 
 
 @keyframes bounceIn {
@@ -119,29 +172,12 @@ body {
 
 
 .page__wrap {
-	height: 1500px;
+	min-height: 1500px;
+}
+
+.text__wrap {
+	padding: 10px;
 }
 
 
 
-.say-hallo .bg-area.left-bg {
-    border-width: 590px 0 0 2500px;
-    border-color: transparent transparent transparent rgba(	249, 169, 30, 0.2);
-    right: 30%;
-}
-
-.say-hallo .bg-area {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    line-height: 0px;
-    bottom: 0;
-    z-index: -10;
-}
-
-.say-hallo .bg-area.right-bg {
-    border-width: 0 0 570px 1500px;
-    border-color: transparent transparent rgba(81, 191, 237, 0.2) transparent;
-    right: 0;
-}

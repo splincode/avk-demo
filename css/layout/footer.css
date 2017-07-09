@@ -1,0 +1,21 @@
+.say-hallo .bg-area.left-bg {
+    border-width: 590px 0 0 2500px;
+    border-color: transparent transparent transparent rgba(	249, 169, 30, 0.2);
+    right: 30%;
+}
+
+.say-hallo .bg-area {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    line-height: 0px;
+    bottom: 0;
+    z-index: -10;
+}
+
+.say-hallo .bg-area.right-bg {
+    border-width: 0 0 570px 1500px;
+    border-color: transparent transparent rgba(81, 191, 237, 0.2) transparent;
+    right: 0;
+}
