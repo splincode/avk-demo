@@ -16,16 +16,15 @@
 			<div class="header__navbar header__navbar--left">
 				<ul>
 					<li><a class="header__navbar--main" href="#">О компании</a></li>
-					<li><a href="#">Отрасли</a></li>
-					<li><a href="#">Заказчики</a></li>
-					<li><a href="#">Сертификаты</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a id="industry-href" href="#">Заказчики</a></li>
+					<li><a id="product-href" href="#">Продукты</a></li>
+					<li><a id="contact-href" href="#">Контакты</a></li>
 				</ul>
 			</div>
 
 			<div class="header__navbar header__navbar--right">
 				<ul>
-					<li><a class="header__navbar--submain" href="#">Проекты</a></li>
+					<li><a class="header__navbar--submain" target="_blank" href="https://hh.ru/employer/274">Вакансии</a></li>
 				</ul>
 			</div>
 
@@ -33,7 +32,7 @@
 			<div class="container-outwrap">
 				<div class="container__wrap container__wrap--left">
 					<h2 class="wrap-white write-h2">Компания «АВК-Коммьюникейшнз» готова к активному сотрудничеству</h2>
-					<p class="write-p">Своей миссией компания «АВК-Коммьюникейшнз» считает создание IT продуктов, предоставляющих сотрудникам возможность полностью реализовать свой потенциал. </p>
+					<p class="write-p">Своей миссией компания «АВК-Коммьюникейшнз» считает создание IT продуктов, предоставляющих сотрудникам возможность полностью реализовать свой потенциал</p>
 				</div>
 
 				<div class="container__wrap container__wrap--right">
@@ -48,9 +47,10 @@
 		</div>
 	</header>
 
-	<main class="page__mainwrap">
+	<main id="industry" class="page__mainwrap">
 
-		<div class="page__container">
+
+		<div class="page__container page__container--company clearfix">
 			<div class="container__logotype">C нами сотрудничают</div>
 			
 			<div class="container__logotype">
@@ -91,17 +91,130 @@
 
 		</div>
 
-		<div class="page__container page__wrap">
+		<div id="product" class="page__container page__wrap">
 			
-
+			<div class="page-header">
+				<p class="page-header__title">Компания работает на рынке OSS/BSS cистем с 1995 года</p>
+			</div>
 
 
 		
+			<div class="page-body clearfix">
+                <div class="page-body--left">
+                    <div class="page-body__picture img-telco">
+                        <!-- <img src="img/telco.png" width="400"> -->
+                    </div>
+                </div>
+
+                <div class="page-body--right">
+                    <div class="page-body__text">
+                        <h3 class="h3 color--secondary">Автоматизированная Система Расчетов «Атлант»</h3>
+                        <p class="color__text--secondary">Специально разработанный комплекс средств для автоматизации работы операторов связи</p>
+                        <p class="color__text--secondary">Сервис биллинг BaaS представляет уникальную возможность быстрого выхода на рынок с обслуживанием до 25 млн абонентов</p>
+                        <p class="color__text--secondary">Обеспечивает эффективную бесперебойную работу операторов связи</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="page-body clearfix">
+                <div class="page-body--left">
+                	<div class="page-body__text">
+                	    <h3 class="h3 color--secondary">Медицинская информационная система «Notum»</h3>
+                	    <p class="color__text--secondary">Сформированное системой информационное пространство позволяет повысить эффективность лечения при снижении финансовых затрат</p>
+                	    <p class="color__text--secondary"> Уникальный дружественный интерфейс, возможность интеграции системы с медицинским оборудованием, обмен информацией онлайн</p>
+                	    <p class="color__text--secondary">Уникальная система «Notum.pro» обеспечит эффективный контроль за состоянием Вашего здоровья в любых ситуациях</p>
+                	</div>
+                </div>
+
+                <div class="page-body--right page-body--right-small">
+                    <div class="page-body__picture fix-top img-notum">
+                        <!-- <img src="img/notum.gif" width="400"> -->
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="page-body clearfix">
+                <div class="page-body--left">
+                    <div class="page-body__picture  fix-top img-city">
+                        <!-- <img src="img/telco.png" width="400"> -->
+                    </div>
+                </div>
+
+                <div class="page-body--right">
+                    <div class="page-body__text">
+                        <h3 class="h3 color--secondary">Система «Атлант-ЖКХ»</h3>
+                        <p class="color__text--secondary">Предоставляет индивидуальные эффективные комплексные программно-технические решения для автоматизации учетной деятельности ЖКХ</p>
+                        <p class="color__text--secondary">Уровень и возможности компании соответствуют всем требованиям тендеров на разработку программного обеспечения как на государственных, так и на коммерческих торговых площадках</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="page-body clearfix">
+                <div class="page-body--left">
+                	<div class="page-body__text">
+                	    <h3 class="h3 color--secondary">Логистическая информационная система «LIS»</h3>
+                	    <p class="color__text--secondary">Вы легко найдете комплексное решение всего спектра задач логистики Вашего бизнеса</p>
+                	    <p class="color__text--secondary">Позволяет проводить автоматический расчет оптимального маршрута и обеспечивает постоянный мониторинг местонахождения и перемещений транспортных средств и других объектов, используя надежное навигационное оборудование. </p>
+                	</div>
+                </div>
+
+                <div class="page-body--right page-body--right-small">
+                    <div class="page-body__picture fix-top img-logistic">
+                        <!-- <img src="img/notum.gif" width="400"> -->
+                    </div>
+                </div>
+
+            </div>
 
 
 
 
+		</div>
 
+<!-- 
+		<div class="page-contact">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aae250929dcbc7535edbe1df857039cd97e8e7e52e14cbd37aeb8425be17858f1&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+		</div> -->
+
+		<div id="contact" class="page-footer">
+			<div class="container-outwrap  page-footer--container clearfix">
+				<div class="container__wrap container__wrap--left">
+					<h2 class="wrap-white write-h2">Наше программное обеспечение станет надежным фундаментом Вашего бизнеса</h2>
+					<p class="write-p">Не останавливаясь на достигнутом, компания «АВК-Коммьюникейшнз» активно проводит перспективные разработки уникальных программных продуктов, которые могут стать выдающимися достижениями в области информационных технологий</p>
+				</div>
+
+				<div class="container__wrap container__wrap--right container__wrap--footer">
+					<p>
+						<b>Физический адрес:</b><br>
+						125212, Россия, г. Москва, ул. Ленинградское ш., д.43а
+					</p>
+
+					<p>
+						<b>Телефон:</b><br>
+						+7 (495) 452-05-48
+					</p>
+
+					<p>
+						<b>Факс:</b><br>
+						+7 (495) 452-05-48
+					</p>
+
+					<p>
+						<b>E-mail:</b><br>
+						market@atlant-inform.ru
+					</p>
+
+					
+				</div>
+
+			</div>
 		</div>
 
 
@@ -111,6 +224,9 @@
 		</div>
 
 	</main>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 
 
 </body>
