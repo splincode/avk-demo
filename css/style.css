@@ -48,7 +48,7 @@ body {
 
 
 .page__container {
-	max-width: 1350px;
+	max-width: 1280px;
 	padding: 0 20px;
 	height: auto;
 	margin: 0 auto;
@@ -236,6 +236,33 @@ body {
 	filter: grayscale(100%);
 }
 
+@media (max-width: 768px) {
+
+	.page-body,
+	.page__container,
+	.page-footer--container {
+		margin: 0 auto !important;
+		width: 90%;
+	}
+
+	.page-footer {
+		height: auto !important;
+	}
+
+	.container__wrap--right {
+		width: 100%;
+	}
+
+	.page-body--left, .page-body--right {
+		width: 100%;
+    	float: none;
+	}
+
+	.page-body__picture {
+	    display: none !important;
+	}
+}
+
 .color--secondary {
     color: #335578;
 }
@@ -300,7 +327,7 @@ body {
 }
 
 .page-footer--container {
-	max-width: 1350px;
+	max-width: 1280px;
 	height: auto;
 	margin: 0 auto;
 	padding-top: 35px;
