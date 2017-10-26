@@ -116,7 +116,7 @@ body {
 .write-h2 {
 	letter-spacing: -0.01em;
     line-height: 1;
-    font-size: 50px;
+    font-size: 42px;
     font-weight: 500;
     margin-bottom: 87px;
 
@@ -236,6 +236,18 @@ body {
 	filter: grayscale(100%);
 }
 
+.page-body__picture--top {
+	margin-top: 125px !important;
+}
+
+.page-body__text ul li {
+    font-size: 17px;
+    line-height: 1.2;
+    padding-right: 25%;
+    margin: 0 0 10px 0;
+    color: #677482;
+}
+
 @media (max-width: 768px) {
 
 	.page-body,
@@ -314,8 +326,13 @@ body {
 	background-image: url(../img/logistic.jpg);
 }
 
+.img-vtm {
+	background-image: url(../img/prod.png);
+}
+
 .fix-top {
 	margin-top: 25px;
+	max-height: 325px;
 }
 
 

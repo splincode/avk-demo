@@ -48,21 +48,22 @@ function mainWrapFire(){
 
 
 $("#industry-href").click(function() {
-    $('body').animate({
+	console.log(mainwrap.offset().top)
+    $('html, body').animate({
         scrollTop: mainwrap.offset().top - 25
     }, 800);
 });
 
 
 $("#product-href").click(function() {
-    $('body').animate({
+    $('html, body').animate({
         scrollTop: $("#product").offset().top - 25
     }, 800);
 });
 
 
 $("#contact-href").click(function() {
-    $('body').animate({
+    $('html, body').animate({
         scrollTop: $("#contact").offset().top
     }, 800);
 });
